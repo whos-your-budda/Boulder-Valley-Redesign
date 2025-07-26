@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boulder Valley Health</title>
   <style>
+    .info-section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -66,14 +72,14 @@
     }
 
     .hero-image {
-      height: 200px;
-      background: #e6f4f1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      color: #666;
       margin: 1rem 0;
+      /* Optionally keep padding or further style the image container */
+    }
+    .hero-image img {
+      max-height: 50vh;
+      width: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .hero-message {
@@ -172,6 +178,11 @@
 </head>
 <body>
 
+  <!-- Banner Message -->
+  <div style="background-color: #800080; color: #fff; padding: 0.5rem; text-align: center;">
+    Abortion is legal in Colorado. All are welcome here. Appointments are available within a week.
+  </div>
+
   <!-- Skip Navigation Link -->
   <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -191,38 +202,76 @@
 
   <!-- Main Content -->
   <main id="main" role="main">
-    <!-- Hero Image Placeholder -->
+    <!-- Hero Image -->
     <section class="hero-image">
-      <p>Image</p>
+      <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+           alt="Image of diverse hands joined together in support, symbolizing unity and community care at a reproductive health clinic." />
     </section>
 
     <!-- Headline and CTA -->
     <section class="hero-message">
-      <h2>Comprehensive, Compassionate Health Care</h2>
-      <p>We offer inclusive, confidential reproductive and sexual health care to all individuals, regardless of gender identity or ability to pay. Our clinic is committed to serving the Boulder County community with dignity and respect.</p>
+      <h2>High-Quality, Affordable, and Compassionate Health Care</h2>
+      <p style="text-align: center; max-width: 800px; margin: auto;">
+        Boulder Valley Health Center provides person-centered care based on best practices in reproductive and sexual health. We strive to demonstrate compassion in everything we do. We are part of our community and dedicated to removing barriers to care, locally and beyond. Our core values are Care, Compassion, and Community.
+      </p>
       <a class="cta-button" href="/appointment.html">Schedule Appointment</a>
     </section>
 
     <!-- Service Cards -->
     <section class="services">
       <div class="service" tabindex="0">
+        <h3>Abortion Care</h3>
+        <p>Medication and procedural abortion care up to 16 weeks, 0 days of pregnancy.</p>
+      </div>
+      <div class="service" tabindex="0">
+        <h3>Gyn Care</h3>
+        <p>Reproductive and sexual health preventive care, consultation and treatments for gynecologic concerns.</p>
+      </div>
+      <div class="service" tabindex="0">
+        <h3>Gender Affirming</h3>
+        <p>Gender affirming care, including initiation and maintenance gender-affirming hormonal therapy.</p>
+      </div>
+      <div class="service" tabindex="0">
+        <h3>Counseling</h3>
+        <p>Person-centered birth control counseling, initiation, and support.</p>
+      </div>
+      <div class="service" tabindex="0">
+        <h3>Infection Testing and PrEP</h3>
+        <p>Confidential testing, prevention and treatment for STIs including HIV, chlamydia, and gonorrhea.</p>
+      </div>
+      <div class="service" tabindex="0">
         <h3>Birth Control</h3>
-        <p>Multiple contraception methods tailored to your lifestyle and health goals.</p>
-        <p>Options include IUDs, pills, implants, and more.</p>
-        <p>All services are confidential and patient-centered.</p>
+        <p>Free and confidential birth control and STI testing for young people under age 18.</p>
       </div>
-      <div class="service" tabindex="0">
-        <h3>STI Testing</h3>
-        <p>Comprehensive screening for common STIs including HIV, chlamydia, and gonorrhea.</p>
-        <p>Results delivered securely and quickly.</p>
-        <p>No judgment. Just care.</p>
-      </div>
-      <div class="service" tabindex="0">
-        <h3>Low-Cost Care</h3>
-        <p>We accept Medicaid and offer sliding scale pricing based on income.</p>
-        <p>No one is turned away for lack of funds.</p>
-        <p>Your health is our priority.</p>
-      </div>
+    </section>
+
+    <!-- Mission Sections -->
+    <section class="info-section" tabindex="0">
+      <h3>What We Do</h3>
+      <p>We provide accessible and equitable reproductive and sexual health care, counseling, and information for people of all gender identities.</p>
+    </section>
+
+    <section class="info-section" tabindex="0">
+      <h3>Who We Do It For</h3>
+      <p>We provide services to everyone, including all ages, genders, sexual orientations, physical attributes, immigration, or insurance status. 60% of our patients are under age 25. We offer confidential, low or no-cost care for youth under 18, and sliding scale services for all patients.</p>
+    </section>
+
+    <section class="info-section" tabindex="0">
+      <h3>Why We Do It</h3>
+      <p>We believe that reproductive and sexual health is an essential aspect of medical care and a human right.</p>
+    </section>
+
+    <!-- Testimonial Block -->
+    <section class="testimonial info-section" aria-label="Patient Testimonials" tabindex="0">
+      <h3>Patient Reviews</h3>
+      <blockquote>
+        <p>"The BEST place I have gone for women’s health care! Been to this clinic twice so far in the last 6 months and each time has been a wonderful experience."</p>
+        <footer>– Morgan Newnham</footer>
+      </blockquote>
+      <blockquote>
+        <p>"Amazing staff, they made me feel so comfortable and affirmed."</p>
+        <footer>– Suzy Gordon</footer>
+      </blockquote>
     </section>
 
     <section class="subscribe">
