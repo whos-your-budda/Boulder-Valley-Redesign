@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services</title>
+  <style>
+    .services h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .service-featured {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .service-featured img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .service-featured h3 {
+      margin-top: 0;
+    }
+
+    .learn-more {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #444;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .service-list {
+      border-top: 1px solid #ccc;
+    }
+
+    .service-item {
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 0;
+    }
+
+    .service-item h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+
+    .subscribe {
+      padding: 2rem;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .subscribe form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .subscribe label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .subscribe input {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .subscribe button {
+      padding: 0.5rem 1rem;
+      background: #044f75;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .subscribe button:focus {
+      outline: 3px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <section class="services">
+      <h2>Our Services</h2>
+
+      <div class="service-featured" tabindex="0">
+        <img src="https://via.placeholder.com/150" alt="" />
+        <div>
+          <h3>Birth Control</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="learn-more" href="#">Learn More</a>
+        </div>
+      </div>
+
+      <div class="service-list">
+        <div class="service-item" tabindex="0">
+          <h3>STI Testing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="service-item" tabindex="0">
+          <h3>Abortion Services</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="service-item" tabindex="0">
+          <h3>Gynecology</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+    <section class="subscribe">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form aria-label="Newsletter signup">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer role="contentinfo"></footer>
+</body>
+</html>

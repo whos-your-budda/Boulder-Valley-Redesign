@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boulder Valley Health</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #222;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 10px;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 1000;
+    }
+
+    header {
+      background: #044f75;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav a:focus, nav a:hover {
+      outline: 3px solid #fff;
+    }
+
+    .hero-image {
+      height: 200px;
+      background: #e6f4f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #666;
+      margin: 1rem 0;
+    }
+
+    .hero-message {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hero-message h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .cta-button:focus {
+      outline: 3px solid #000;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .service {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #044f75;
+      color: #ddd;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer nav {
+      margin-bottom: 0.5rem;
+    }
+
+    footer nav a {
+      color: #ddd;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    footer nav a:focus, footer nav a:hover {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    .subscribe {
+      padding: 2rem;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .subscribe form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .subscribe label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .subscribe input {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .subscribe button {
+      padding: 0.5rem 1rem;
+      background: #044f75;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .subscribe button:focus {
+      outline: 3px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Navigation Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-wrapper">
+      <h1 class="site-title">Boulder Women's Health Center</h1>
+      <nav role="navigation" aria-label="Main menu">
+        <ul>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <!-- Hero Image Placeholder -->
+    <section class="hero-image">
+      <p>Image</p>
+    </section>
+
+    <!-- Headline and CTA -->
+    <section class="hero-message">
+      <h2>Comprehensive, Compassionate Health Care</h2>
+      <p>We offer inclusive, confidential reproductive and sexual health care to all individuals, regardless of gender identity or ability to pay. Our clinic is committed to serving the Boulder County community with dignity and respect.</p>
+      <a class="cta-button" href="/appointment.html">Schedule Appointment</a>
+    </section>
+
+    <!-- Service Cards -->
+    <section class="services">
+      <div class="service" tabindex="0">
+        <h3>Birth Control</h3>
+        <p>Multiple contraception methods tailored to your lifestyle and health goals.</p>
+        <p>Options include IUDs, pills, implants, and more.</p>
+        <p>All services are confidential and patient-centered.</p>
+      </div>
+      <div class="service" tabindex="0">
+        <h3>STI Testing</h3>
+        <p>Comprehensive screening for common STIs including HIV, chlamydia, and gonorrhea.</p>
+        <p>Results delivered securely and quickly.</p>
+        <p>No judgment. Just care.</p>
+      </div>
+      <div class="service" tabindex="0">
+        <h3>Low-Cost Care</h3>
+        <p>We accept Medicaid and offer sliding scale pricing based on income.</p>
+        <p>No one is turned away for lack of funds.</p>
+        <p>Your health is our priority.</p>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <h2>Book An Appointment Now</h2>
+      <form aria-label="Newsletter signup">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+        <button type="submit">Book</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <nav>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <p>&copy; 2024 Boulder Women’s Health Center</p>
+  </footer>
+
+</body>
+</html>
